@@ -1,0 +1,99 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navegación */
+.navbar {
+    background-color: #343a40 !important;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-link {
+    color: #ffffff !important;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor principal */
+.container {
+    margin-top: 30px;
+}
+
+/* Tarjetas de servicios */
+.card {
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.card-body {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación de botones */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplicar la animación al cargar */
+.container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Efecto hover en botones */
+.btn-animado {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-animado:hover {
+    background-color: #0056b3;
+    animation: pulse 0.5s infinite;
+}
+
+footer {
+    position: relative !important;
+    bottom: 0;
+    width: 100%;
+}
+
